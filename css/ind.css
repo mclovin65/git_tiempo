@@ -1,51 +1,47 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    padding: 20px;
-}
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 375px) {
-    .table-container {
-        overflow-x: auto;
-        margin: 0 auto; /* Centrar la tabla */
-        max-width: 375px; /* Ancho máximo de 375px */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 10px;
     }
+
+    h1 {
+        font-size: 24px;
+    }
+
     table {
         width: 100%;
+        border: 0;
     }
-}
 
-/* Estilos para la tabla */
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
+    table, th, td {
+        display: block;
+    }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
+    th, td {
+        padding: 10px;
+        text-align: right;
+    }
 
-th {
-    background-color: #333;
-    color: #fff;
-}
+    th {
+        background: none;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+    }
 
-tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
+    td {
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
 
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        padding-right: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    ;
+}
