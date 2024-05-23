@@ -1,47 +1,22 @@
-@media only screen and (max-width: 600px) {
-    body {
-        margin: 10px;
-    }
+body {
+    padding-bottom: 60px; 
+}
 
-    h1 {
-        font-size: 24px;
-    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
 
-    table {
-        width: 100%;
-        border: 0;
-    }
+table, th, td {
+    border: 1px solid #ddd;
+}
 
-    table, th, td {
-        display: block;
-    }
+th, td {
+    padding: 8px;
+    text-align: left;
+}
 
-    th, td {
-        padding: 10px;
-        text-align: right;
-    }
-
-    th {
-        background: none;
-        color: #333;
-        border-bottom: 1px solid #ddd;
-    }
-
-    td {
-        border-bottom: 1px solid #ddd;
-        position: relative;
-        padding-left: 50%;
-    }
-
-    td:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        width: calc(50% - 20px);
-        padding-right: 10px;
-        text-align: left;
-        font-weight: bold;
-    }
-
-    ;
+th {
+    background-color: #f2f2f2;
 }
