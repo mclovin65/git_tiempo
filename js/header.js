@@ -1,6 +1,6 @@
-let yui=document.querySelector(".header")
+let yui=document.querySelector(".p1")
 yui.innerHTML=`
- <div class="conteiner">
-    <p>colobiorador jacalderon</p>
- </div>
+<h1>colaborador  calderon biato</h1>
+
+
 `;
