@@ -1,0 +1,7 @@
+.conteiner{
+    background-color: firebrick;
+}
+header{
+    display:flex;
+    align-items:center ;
+}
